@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yiyoruz_project/Pages/Greeting_Pages/Welcome_Page_2.dart';
 import 'package:yiyoruz_project/Pages/Login_Pages/Login_Page.dart';
 import 'package:yiyoruz_project/Pages/Menu_Pages/Main_Menu.dart';
 import 'package:yiyoruz_project/Product/Project_Paddings.dart';
@@ -29,7 +30,13 @@ class _WelcomePageThreeState extends State<WelcomePageThree> {
             Expanded(flex: 1, child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(Icons.arrow_left_outlined),
+                IconButton(onPressed: () {
+                    Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => WelcomePageTwo()));
+                  },
+                  icon: Icon(Icons.arrow_left_outlined),),
                 ElevatedButton(onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => LogInPage())); 
                 }, child: Text(WelcomePageText.WelcomePageThreeButtonText))
