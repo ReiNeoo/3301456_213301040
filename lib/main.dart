@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:yiyoruz_project/Pages/Login_Pages/Remember_password.dart';
 import 'package:yiyoruz_project/Pages/Login_Pages/Login_Page.dart';
 import 'package:yiyoruz_project/Pages/Login_Pages/Sign_Up_Page.dart';
 import 'package:yiyoruz_project/Pages/Greeting_Pages/Greetings_View.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color.fromARGB(255, 46, 46, 45)
         ),
       ),
-      home: GreetingWiev(),
+      home: RememberPasswordView(),
     );
   }
 }

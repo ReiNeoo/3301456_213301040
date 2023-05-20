@@ -31,9 +31,27 @@ class PasswordField extends StatelessWidget {
         border: OutlineInputBorder(),
         prefixIcon: Icon(Icons.key_outlined),
         hintText: "Password",
+        
       ),
     maxLength: 10,
-    
+    onChanged: (value) {
+      
+    },
+    );
+  }
+}
+
+class SecurityQuestion extends StatelessWidget {
+  const SecurityQuestion({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const TextField(
+      decoration: InputDecoration(
+        border: OutlineInputBorder(),
+        prefixIcon: Icon(Icons.key_outlined),
+        hintText: "SecurityQuestion",
+      )
     );
   }
 }

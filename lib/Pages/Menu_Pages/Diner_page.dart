@@ -35,7 +35,9 @@ class _DinerPageState extends State<DinerPage> {
 
         ],
       ),
-      bottomNavigationBar: ProjectNavigationBar(),
+      bottomNavigationBar: ProjectNavigationBar(
+        
+      ),
     );
   }
 }
